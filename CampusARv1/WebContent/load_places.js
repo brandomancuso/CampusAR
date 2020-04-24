@@ -45,6 +45,7 @@ AFRAME.registerComponent("clickhandler", {
 				if(h == 0){
 					icon.setAttribute("src", "map-marker-highlight.png");
 	            	icon.setAttribute("highlight", "1");
+	            	alert(icon.getAttribute("name"));
 				}else{
 					icon.setAttribute("src", "map-marker.png");
 					icon.setAttribute("highlight", "0");
