@@ -33,7 +33,7 @@ function renderPlaces(places) {
 //            }
 //        };
         icon.addEventListener("mouseenter", function(evt) {
-        	this.el.setAttribute("src", "map-marker-highlight.png");
+        	evt.target.setAttribute("src", "map-marker-highlight.png");
         });
         a_scene.appendChild(icon);
     }
