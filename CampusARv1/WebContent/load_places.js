@@ -21,7 +21,6 @@ function renderPlaces(places) {
         icon.setAttribute("name", places[i].name);
         icon.setAttribute("src", "map-marker.png");
         icon.setAttribute("look-at", "[gps-camera]");
-//        icon.setAttribute("emitevents", "true");
         icon.setAttribute("clickhandler", "");
 //        icon.setAttribute("highlight", "0");
 //        icon.onclick = (icon) => {
