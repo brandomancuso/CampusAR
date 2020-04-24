@@ -22,7 +22,7 @@ function renderPlaces(places) {
         icon.setAttribute("src", "map-marker.png");
         icon.setAttribute("look-at", "[gps-camera]");
         icon.setAttribute("clickhandler", "");
-//        icon.setAttribute("highlight", "0");
+        icon.setAttribute("highlight", "0");
 //        icon.onclick = (icon) => {
 //        	var highlight = icon.getAttribute("highlight");
 //            if(highlight.localeCompare("0") == 0){
@@ -39,8 +39,16 @@ function renderPlaces(places) {
 
 AFRAME.registerComponent("clickhandler", {
 		init: function() {	
-			this.el.addEventListener("click", () => {
-				alert("Clicked!");
+			this.el.addEventListener("click", function(evt) {
+				let icon = evt.target
+				let h = icon.getAttribute("highlight");
+				if(h == 0){
+					icon.setAttribute("src", "map-marker-highlight.png");
+	            	icon.setAttribute("highlight", "1");
+				}else{
+					icon.setAttribute("src", "map-marker.png");
+					icon.setAttribute("highlight", "0");
+				}
 			});
 		}
 });
