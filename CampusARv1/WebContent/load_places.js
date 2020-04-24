@@ -21,6 +21,8 @@ function renderPlaces(places) {
         icon.setAttribute("name", places[i].name);
         icon.setAttribute("src", "map-marker.png");
         icon.setAttribute("look-at", "[gps-camera]");
+        icon.setAttribute("emitevents", "true");
+        icon.setAttribute("clickhandler", "");
 //        icon.setAttribute("highlight", "0");
 //        icon.onclick = (icon) => {
 //        	var highlight = icon.getAttribute("highlight");
@@ -32,20 +34,17 @@ function renderPlaces(places) {
 //            	icon.setAttribute("highlight", "0");
 //            }
 //        };
-        icon.addEventListener("click", function(evt) {
-        	evt.target.setAttribute("src", "map-marker-highlight.png");
-        });
         a_scene.appendChild(icon);
     }
 }
 
-//AFRAME.registerComponent("clickhandler", {
-//		init: function() {	
-//			this.el.addEventListener("click", () => {
-//				alert("Clicked!");
-//			});
-//		}
-//});
+AFRAME.registerComponent("clickhandler", {
+		init: function() {	
+			this.el.addEventListener("click", () => {
+				alert("Clicked!");
+			});
+		}
+});
 
 let httpReq = new XMLHttpRequest();
 httpReq.open("GET", "places.json");

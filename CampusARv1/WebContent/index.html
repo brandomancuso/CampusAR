@@ -6,8 +6,7 @@
     <title>CampusAR</title>
     <base href="./"/>
     
-    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-    <script src="https://rawgit.com/mayognaise/aframe-mouse-cursor-component/master/dist/aframe-mouse-cursor-component.min.js"></script>
+    <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
     <link rel="stylesheet" type = "text/css" href="style.css"/>
@@ -15,7 +14,8 @@
 
   <body>
     <a-scene id="scene" 
-    cursor="fuse: true; fuseTimeout: 0; rayOrigin: mouse" 
+    cursor="rayOrigin: mouse; fuse: true; fuseTimeout: 0;" 
+    raycaster="objects: [clickhandler];"
     vr-mode-ui = "disabled" 
     embedded 
     arjs="sourceType: webcam; debugUIEnabled: false;">
