@@ -32,7 +32,7 @@ function renderPlaces(places) {
 //            	icon.setAttribute("highlight", "0");
 //            }
 //        };
-        icon.addEventListener("mouseenter", function(evt) {
+        icon.addEventListener("click", function(evt) {
         	evt.target.setAttribute("src", "map-marker-highlight.png");
         });
         a_scene.appendChild(icon);
