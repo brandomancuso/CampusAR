@@ -3,9 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>CampusAR</title>
-    <base href="./"/>
-    
+    <title>CampusAR</title>    
     <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
@@ -13,16 +11,30 @@
   </head>
 
   <body>
-    <a-scene id="scene" 
-    cursor="rayOrigin: mouse; fuse: true; fuseTimeout: 0;" 
-    raycaster="objects: [clickhandler];"
-    vr-mode-ui = "disabled" 
-    embedded 
-    arjs="sourceType: webcam; debugUIEnabled: false;">
+  	<div id="header">
+<!--   	Placeholder for the uninsubria header -->
+  	</div>
+  	<div id="search">
+<!--   		Here it goes the input bar for searching and, eventually, the popup menu' -->
+  	</div>
+  	<div id="ar-camera">
+  		<a-scene id="scene" 
+    	cursor="rayOrigin: mouse; fuse: true; fuseTimeout: 0;" 
+    	raycaster="objects: [clickhandler];"
+    	vr-mode-ui = "disabled" 
+    	embedded 
+    	arjs="sourceType: webcam; debugUIEnabled: false;">
+    		<a-camera id="camera" gps-camera="minDistance: 0;" wasd-controls="disabled" rotation-reader></a-camera>
+    	</a-scene>
+  	</div>
+  	<div id="opt-buttons">
+  		<img id="credits" alt="" src="" onClick="">
+  		<img id="instructions" alt="" src="" onClick="">
+  	</div>
+  	<div id="info-panel">
+<!--   	Overlaied panel where we have to display the info of a clicked geomark -->
+  	</div>
     
-    	<a-camera id="camera" gps-camera="minDistance: 0;" wasd-controls="disabled" rotation-reader></a-camera>
-    	
-    </a-scene>
     <script type="text/javascript" src="load_places.js"></script>
   </body>
 </html>
