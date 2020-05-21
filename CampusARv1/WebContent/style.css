@@ -1,1 +1,70 @@
 @charset "ISO-8859-1";
+html, body {
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+}
+body {
+	font-family: arial,sans-serif; 
+	font-size: 76%;
+}
+#header {
+	display: block;
+	width: 100%;
+	height: 17%;
+	text-align: center;
+	text-transform: uppercase;
+	text-shadow: 0px 1px 1px #ddd;
+	line-height: 140%;
+	font-family:Garamond,Baskerville,"Baskerville Old Face","Hoefler Text","Times New Roman",serif;
+	font-size: 2em;
+	background-color: white;
+	background-image: url("sf_testata.png");
+	background-repeat: no-repeat;
+	background-position-x: center;
+	border-top: 3px;
+	border-bottom: 3px;
+	border-left: 0px;
+	border-right: 0px;
+	border-color: #006254;
+	border-style: solid;
+	position: relative;
+	top: 0px;
+	right: 0px;
+	z-index: 0;
+}
+#header a:visited{
+	color: black;
+}
+#header a:link{
+	color: black;
+}
+#search{
+	position: relative;
+	top: 0px;
+	left: 0px;
+	padding: 5px;
+	z-index: 1;
+}
+.searchbar{
+	width: 80%;
+	position: relative;
+	left: 0px;
+}
+.searchbtn{
+	margin-left: 5px;
+	position: relative;
+	right: 0px;
+
+}
+#ar-camera{
+	position: relative;
+	top: 0px;
+	left: 0px;
+	z-index: 0;
+}
+#scene{
+	width: 100%;
+	hight: 100%;
+	z-index: 0;
+}
