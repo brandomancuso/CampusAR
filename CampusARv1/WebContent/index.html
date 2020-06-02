@@ -17,22 +17,13 @@
 		<input class="searchbar" type="search"><input class="searchbtn" type="button" value="Search!">
   	</div>
   	<iframe id="ar-camera" src="AugmentedReality.html" sandbox="allow-scripts allow-same-origin" scrolling="no">
-<!--   		<a-scene id="scene"  -->
-<!--     	cursor="rayOrigin: mouse; fuse: true; fuseTimeout: 0;"  -->
-<!--     	raycaster="objects: [clickhandler];" -->
-<!--     	vr-mode-ui = "disabled"  -->
-<!--     	embedded  -->
-<!--     	arjs="sourceType: webcam; debugUIEnabled: false;"> -->
-<!--     		<a-camera id="camera" gps-camera="minDistance: 0;" wasd-controls="disabled" rotation-reader></a-camera> -->
-<!--     	</a-scene> -->
   	</iframe>
   	<div id="opt-buttons">
   		<img id="credits" alt="" src="" onClick="">
   		<img id="instructions" alt="" src="" onClick="">
   	</div>
-  	<div id="info-panel">
-<!--   	Overlaied panel where we have to display the info of a clicked geomark -->
-  	</div>
+  	<iframe id="info-panel" src="InfoPadiglione.html">
+  	</iframe>
 	<script type="text/javascript" src="load_places.js"></script>
   </body>
 </html>

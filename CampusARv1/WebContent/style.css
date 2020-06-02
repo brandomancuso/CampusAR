@@ -67,3 +67,13 @@ body {
 	width: 100vw;
 	height: 83vh;
 }
+#info-panel {
+	position: absolute;
+	border: none;
+	bottom: 0px;
+	left: 0px;
+	z-index: 2;
+	width: 100vw;
+	height: 60vh;
+	visibility: hidden;
+}
