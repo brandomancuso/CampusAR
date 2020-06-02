@@ -5,9 +5,7 @@
 
     <meta charset="utf-8">
     <title>CampusAR</title>    
-    <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
-    <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
-    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+	<script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
     <link rel="stylesheet" type = "text/css" href="style.css"/>
   </head>
 
@@ -18,16 +16,16 @@
   	<div id="search">
 		<input class="searchbar" type="search"><input class="searchbtn" type="button" value="Search!">
   	</div>
-  	<div id="ar-camera">
-  		<a-scene id="scene" 
-    	cursor="rayOrigin: mouse; fuse: true; fuseTimeout: 0;" 
-    	raycaster="objects: [clickhandler];"
-    	vr-mode-ui = "disabled" 
-    	embedded 
-    	arjs="sourceType: webcam; debugUIEnabled: false;">
-    		<a-camera id="camera" gps-camera="minDistance: 0;" wasd-controls="disabled" rotation-reader></a-camera>
-    	</a-scene>
-  	</div>
+  	<iframe id="ar-camera" src="AugmentedReality.html" sandbox="allow-scripts allow-same-origin" scrolling="no">
+<!--   		<a-scene id="scene"  -->
+<!--     	cursor="rayOrigin: mouse; fuse: true; fuseTimeout: 0;"  -->
+<!--     	raycaster="objects: [clickhandler];" -->
+<!--     	vr-mode-ui = "disabled"  -->
+<!--     	embedded  -->
+<!--     	arjs="sourceType: webcam; debugUIEnabled: false;"> -->
+<!--     		<a-camera id="camera" gps-camera="minDistance: 0;" wasd-controls="disabled" rotation-reader></a-camera> -->
+<!--     	</a-scene> -->
+  	</iframe>
   	<div id="opt-buttons">
   		<img id="credits" alt="" src="" onClick="">
   		<img id="instructions" alt="" src="" onClick="">
@@ -35,8 +33,7 @@
   	<div id="info-panel">
 <!--   	Overlaied panel where we have to display the info of a clicked geomark -->
   	</div>
-    
-    <script type="text/javascript" src="load_places.js"></script>
+	<script type="text/javascript" src="load_places.js"></script>
   </body>
 </html>
 

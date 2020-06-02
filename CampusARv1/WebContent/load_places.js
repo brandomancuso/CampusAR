@@ -9,12 +9,16 @@ class Marker {
     }
 }
 
+let arview = document.getElementById("ar-camera");
+let markers = [];
+
 function renderPlaces(places) {
-    let a_scene = document.getElementById("scene");
+	let ar_doc = arview.contentDocument;
+    let a_scene = ar_doc.getElementById("scene");
 
     for(let i = 0; i < places.length; i++) {
         // add place icon
-        const icon = document.createElement("a-image");
+        const icon = ar_doc.createElement("a-image");
         icon.setAttribute("gps-entity-place", "latitude: " + places[i].coords[0] + "; longitude: " + places[i].coords[1] + ";");
         icon.setAttribute("width", "2");
         icon.setAttribute("height", "3");
@@ -23,16 +27,6 @@ function renderPlaces(places) {
         icon.setAttribute("look-at", "[gps-camera]");
         icon.setAttribute("clickhandler", "");
         icon.setAttribute("highlight", "0");
-//        icon.onclick = (icon) => {
-//        	var highlight = icon.getAttribute("highlight");
-//            if(highlight.localeCompare("0") == 0){
-//            	icon.setAttribute("src", "map-marker-highlight.png");
-//            	icon.setAttribute("highlight", "1");
-//            }else{
-//            	icon.setAttribute("src", "map-marker.png");
-//            	icon.setAttribute("highlight", "0");
-//            }
-//        };
         a_scene.appendChild(icon);
     }
 }
@@ -54,19 +48,20 @@ AFRAME.registerComponent("clickhandler", {
 		}
 });
 
-let httpReq = new XMLHttpRequest();
-httpReq.open("GET", "places.json");
-httpReq.send(null);
-let markers = [];
-httpReq.onreadystatechange = function() {
-	if (this.readyState == 4 && this.status == 200) {
-		let json = httpReq.response;
-		let obj = JSON.parse(json);
-		let places = obj.Campus;
-		for(let i = 0; i < places.length; i++){
-			markers.push(new Marker( places[i].name, places[i].coords.latitude, places[i].coords.longitude));
+arview.contentWindow.onload = () => {
+	let httpReq = new XMLHttpRequest();
+	httpReq.open("GET", "places.json");
+	httpReq.send(null);
+	httpReq.onreadystatechange = function() {
+		if (this.readyState == 4 && this.status == 200) {
+			let json = httpReq.response;
+			let obj = JSON.parse(json);
+			let places = obj.Campus;
+			for(let i = 0; i < places.length; i++){
+				markers.push(new Marker( places[i].name, places[i].coords.latitude, places[i].coords.longitude));
+			}
+			renderPlaces(markers);	
 		}
-		renderPlaces(markers);
-		
-	}
-};
+	};
+}
+
