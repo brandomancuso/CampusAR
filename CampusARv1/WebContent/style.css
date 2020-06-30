@@ -77,3 +77,18 @@ body {
 	height: 60vh;
 	visibility: hidden;
 }
+#opt-buttons {
+	position: absolute;
+	z-index: 1;
+	width: 100vw;
+	bottom: 0px;
+}
+#opt-buttons img{
+	display: block;
+}
+#credits {
+	left: 0px;
+}
+#instructions {
+	right: 0px;
+}
