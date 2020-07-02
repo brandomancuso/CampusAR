@@ -54,18 +54,17 @@ body {
 input[type=search] {
 	-webkit-appearance: textfield;
 	-webkit-box-sizing: content-box;
+	
 	font-family: inherit;
 	font-size: 100%;
-}
-input::-webkit-search-decoration,
-input::-webkit-search-cancel-button {
-	display: none;
-}
-input[type=search] {
+	
 	background: url("search.png") no-repeat 9px center;
+	background-color: #fff;
+	color: transparent;
+	
 	border: solid 1px #006254;
-	padding: 9px 10px 9px 32px;
-	width: 55px;
+	padding: 9px 10px 9px 10px;
+	width: 15px;
 	
 	-webkit-border-radius: 10em;
 	-moz-border-radius: 10em;
@@ -74,35 +73,32 @@ input[type=search] {
 	-webkit-transition: all .5s;
 	-moz-transition: all .5s;
 	trasition: all .5s;
+
+	cursor: pointer;
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+	display: none;
 }
 
 input[type=search]:focus {
 	width: 75vw;
 	background-color: #fff;
 	border-color: #006254;
+	color: #000;
 	
 	-webkit-box-shadow: 0 0 5px rgba(109,207,246, .5);
 	-moz-box-shadow: 0 0 5px rgba(109,207,246, .5);
 	box-shadow: 0 0 5px rgba(109,207,246, .5);
-}
 
-input[type=search] {
-	width: 15px;
-	padding-left: 10px;
-	color: transparent;
-	background-color: #fff;
-	cursor: pointer;
+	padding-left: 32px;
+	
+	cursor: auto;
 }
 input[type=search]:hover{
 	background-color: #fff;
 }
-input[type=search]:focus{
-	width: 75vw;
-	padding-left: 32px;
-	color: #000;
-	background-color: #fff;
-	cursor: auto;
-}
+
 .searchbtn{
 	margin-left: 5px;
 	position: relative;
