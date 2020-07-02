@@ -14,7 +14,11 @@
   		<a href="https://www.uninsubria.it/">Università degli studi dell'Insubria</a>
  	</div>
   	<div id="search">
-		<input class="searchbar" type="search"><input class="searchbtn" type="button" value="Search!">
+		<input class="searchbar" type="search" placeholder="Search for buildings..." onkeyup="filter()"><input class="searchbtn" type="button" value="Search!">
+		<ul id="buildingsList" class="dropdown-content">
+			<li><p>Item 1</p></li>
+			<li><p>Item 2</p></li>
+		</ul>
   	</div>
   	<iframe id="ar-camera" src="AugmentedReality.html" sandbox="allow-scripts allow-same-origin" scrolling="no">
   	</iframe>
