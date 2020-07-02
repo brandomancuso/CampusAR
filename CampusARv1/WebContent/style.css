@@ -1,6 +1,6 @@
 @charset "ISO-8859-1";
 * {
-	outline: none !important;
+	outline: none !important; /**/
 }
 html, body {
 	margin: 0px;
@@ -108,7 +108,7 @@ input[type=search]:hover{
   padding: 0;
   margin: 0;
   margin-left: 25px;
-  width: 75wv;
+  width: 75vw;
 }
 
 #search ul li p {
