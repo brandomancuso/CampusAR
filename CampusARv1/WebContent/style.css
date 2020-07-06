@@ -104,28 +104,33 @@ input::-webkit-search-cancel-button {
 	background-color: #fff;
 }
 
-.dropdown-content {
-	position: relative;
+#buildingsList {
 	list-style-type: none;
   	padding: 0;
   	margin: 0;
+}
+
+.dropdown-content {
+	position: relative;
   	margin-left: 25px;
   	width: 75vw;
   	display: none;
+  	max-height: 30vh;
+  	overflow: scroll;
   	z-index: 2;
 }
 
-.dropdown-content li p {
+#buildingsList li p {
   border: 1px solid #ddd; /* Add a border to all elements */
   margin: 0px;
   background-color: #f6f6f6; /* Grey background color */
   padding: 12px; /* Add some padding */
-  font-size: 18px; /* Increase the font-size */
+  font-size: 120%; /* Increase the font-size */
   color: black; /* Add a black text color */
   display: block; /* Make it into a block element to fill the whole list */
 }
 
-.dropdown-content li p:hover {
+#buildingsList li p:hover {
   background-color: #eee; /* Add a hover effect to all links, except for headers */
 }
 
