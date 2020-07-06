@@ -31,6 +31,17 @@ function renderPlaces(places) {
     }
 }
 
+function loadSearchbarItems(places) {
+	let list = document.getElementById("buildingsList");
+	for(let i = 0; i < places.length; i++) {
+		const item = document.createElement("li");
+		const text = document.createElement("p");
+		text.innerHTML = places[i].name;
+		item.appendChild(text);
+		list.appendChild(item);
+	}
+}
+
 AFRAME.registerComponent("clickhandler", {
 		init: function() {	
 			this.el.addEventListener("click", function(evt) {
@@ -64,7 +75,8 @@ arview.contentWindow.onload = () => {
 			for(let i = 0; i < places.length; i++){
 				markers.push(new Marker( places[i].name, places[i].coords.latitude, places[i].coords.longitude));
 			}
-			renderPlaces(markers);	
+			renderPlaces(markers);
+			loadSearchbarItems(markers);
 		}
 	};
 }
