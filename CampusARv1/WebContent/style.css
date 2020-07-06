@@ -12,13 +12,13 @@ body {
 	font-size: 76%;
 }
 #header {
-	display: block;
+	display: table-cell;
 	width: 100vw;
 	height: 17vh;
 	text-align: center;
 	text-transform: uppercase;
 	text-shadow: 0px 1px 1px #ddd;
-	line-height: 140%;
+	vertical-align: middle;
 	font-family:Garamond,Baskerville,"Baskerville Old Face","Hoefler Text","Times New Roman",serif;
 	font-size: 2em;
 	background-color: white;
