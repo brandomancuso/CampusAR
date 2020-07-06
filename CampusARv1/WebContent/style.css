@@ -129,7 +129,7 @@ input::-webkit-search-cancel-button {
   background-color: #eee; /* Add a hover effect to all links, except for headers */
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown:focus-within .dropdown-content {
 	display: block;
 }
 
