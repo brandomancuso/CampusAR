@@ -66,7 +66,6 @@ body {
 	
 	border: solid 1px #006254;
 	padding: 9px 10px 9px 10px;
-	margin-bottom: 10px;
 	width: 15px;
 	
 	-webkit-border-radius: 10em;
@@ -112,7 +111,7 @@ input::-webkit-search-cancel-button {
 
 .dropdown-content {
 	position: relative;
-  	margin-left: 25px;
+  	margin-left: 29px;
   	width: 75vw;
   	display: none;
   	max-height: 30vh;
@@ -123,7 +122,7 @@ input::-webkit-search-cancel-button {
 #buildingsList li p {
   border: 1px solid #ddd; /* Add a border to all elements */
   margin: 0px;
-  background-color: #f6f6f6; /* Grey background color */
+  background-color: #fff; /* White background color */
   padding: 12px; /* Add some padding */
   font-size: 120%; /* Increase the font-size */
   color: black; /* Add a black text color */

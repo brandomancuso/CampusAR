@@ -26,7 +26,7 @@ function renderPlaces(places) {
         icon.setAttribute("src", "map-marker.png");
         icon.setAttribute("look-at", "[gps-camera]");
         icon.setAttribute("clickhandler", "");
-        icon.setAttribute("highlight", "0");
+        icon.setAttribute("id", i);
         a_scene.appendChild(icon);
     }
 }
@@ -36,9 +36,29 @@ function loadSearchbarItems(places) {
 	for(let i = 0; i < places.length; i++) {
 		const item = document.createElement("li");
 		const text = document.createElement("p");
+		text.setAttribute("data-index", i.toString());
 		text.innerHTML = places[i].name;
+		text.addEventListener("click", searchbarClickHandler);
 		item.appendChild(text);
 		list.appendChild(item);
+	}
+}
+
+function searchbarClickHandler() {
+	let event = window.event;
+	let src = event.target || event.srcElement;
+	let index = src.dataset.index;
+	highlight(index);
+}
+
+function highlight(index) {
+	for(var i = 0; i<markers.length; i++){
+		let element = arview.contentDocument.getElementById(i.toString());
+		if(i == index){
+			element.setAttribute("src","map-marker-highlight.png");
+		} else {
+			element.setAttribute("src","map-marker.png");
+		}
 	}
 }
 
