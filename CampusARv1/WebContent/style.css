@@ -157,16 +157,26 @@ input::-webkit-search-cancel-button {
 	height: 60vh;
 	visibility: hidden;
 }
-#opt-buttons {
-	position: absolute;
-	z-index: 1;
-	width: 100vw;
-	bottom: 0px;
+.button{
+    position: absolute;
+    border: none;
+    z-index: 1;
+    width: auto;
+	height: auto;
+    bottom: 5px;
+}
+.credit{
+	background: url("credits_icon.png") no-repeat;
 	left: 0px;
 }
-#credits {
+.info{
+	background: url("help_icon.png") no-repeat;
+	right: 0px;
+}
+
+/* #credits {
 	text-align: left;
 }
 #instructions {
 	text-align: right;
-}
+} */
