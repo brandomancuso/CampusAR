@@ -161,15 +161,15 @@ input::-webkit-search-cancel-button {
     position: absolute;
     border: none;
     z-index: 1;
-    width: auto;
-	height: auto;
+    width: 30px;
+	height: 30px;
     bottom: 5px;
 }
 .credit{
 	background: url("credits_icon.png") no-repeat;
-	left: 0px;
+	left: 10px;
 }
 .info{
 	background: url("help_icon.png") no-repeat;
-	right: 0px;
+	right: 5px;
 }
