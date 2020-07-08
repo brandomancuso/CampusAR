@@ -35,7 +35,8 @@ function loadSearchbarItems(places) {
 	let list = document.getElementById("buildingsList");
 	for(let i = 0; i < places.length; i++) {
 		const item = document.createElement("li");
-		const text = document.createElement("p");
+		const text = document.createElement("button");
+		text.setAttribute("class", "listElement");
 		text.setAttribute("data-index", i.toString());
 		text.innerHTML = places[i].name;
 		text.addEventListener("click", searchbarClickHandler);
@@ -49,6 +50,7 @@ function searchbarClickHandler() {
 	let src = event.target || event.srcElement;
 	let index = src.dataset.index;
 	highlight(index);
+	src.blur();
 }
 
 function highlight(index) {
