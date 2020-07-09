@@ -11,8 +11,8 @@ function filter() {
 
 	  // Loop through all list items, and hide those who don't match the search query
 	  for (i = 0; i < elements.length; i++) {
-	    par = elements[i].getElementsByTagName("p")[0];
-	    txtValue = par.innerText;
+	    el = elements[i].getElementsByTagName("button")[0];
+	    txtValue = el.innerText || el.innerHTML;
 	    if (txtValue.toUpperCase().indexOf(filter) > -1) {
 	      elements[i].style.display = "";
 	    } else {

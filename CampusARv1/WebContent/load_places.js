@@ -67,20 +67,11 @@ function highlight(index) {
 AFRAME.registerComponent("clickhandler", {
 		init: function() {	
 			this.el.addEventListener("click", function(evt) {
-				let icon = evt.target
-				//just for testing
-				let h = icon.getAttribute("highlight");
-				if(h == 0){
-					icon.setAttribute("src", "map-marker-highlight.png");
-	            	icon.setAttribute("highlight", "1");
-	            	alert(icon.getAttribute("name"));
-				}else{
-					icon.setAttribute("src", "map-marker.png");
-					icon.setAttribute("highlight", "0");
-				}
-				//handler setup
-				let url = "InfoPadiglione.html?";
-				//append params
+				let icon = evt.target || evt.srcElement;
+				alert("Clicked!");
+//				//handler setup
+//				let url = "InfoPadiglione.html?";
+//				//append params
 			});
 		}
 });
