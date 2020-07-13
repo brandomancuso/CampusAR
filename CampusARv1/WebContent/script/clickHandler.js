@@ -2,7 +2,7 @@ AFRAME.registerComponent("clickhandler", {
 		init: function() {	
 			this.el.addEventListener("click", function(evt) {
 				let icon = evt.target || evt.srcElement;
-				let index = icon.id;
+				let index = parseInt(icon.id);
 				let panel = parent.document.getElementById("info-panel");
 				let el = parent.db.Campus[index];
 				panel.innerHTML = "";
