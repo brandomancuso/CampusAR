@@ -7,7 +7,7 @@ AFRAME.registerComponent("clickhandler", {
 				let el = parent.db.Campus[index];
 				panel.innerHTML = "";
 				let image = parent.document.createElement("img");
-				image.setAttribute("src", "resorces/images/" + el.image);
+				image.setAttribute("src", "resources/images/" + el.image);
 				panel.appendChild(image);
 				let name = parent.document.createElement("h1");
 				name.innerHTML = el.name;
