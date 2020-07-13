@@ -4,146 +4,263 @@
 		"coords" : {
 			"latitude" : "45.79832",
 			"longitude" : "8.84759"
-		}},
+		},
+		"image" : "",
+		"info" : {
+			
+		}
+		},
 		{"name" : "Padiglione Ottorino Rossi",
 		"coords" : {
 			"latitude" : "45.79829",
 			"longitude" : "8.84844"
+		},
+		"image" : "",
+		"info" : {
+			
 		}},
 		{"name" : "Padiglione Seppilli",
 		"coords" : {
 			"latitude" : "45.79916",
 			"longitude" : "8.84731"
+		},
+		"image" : "",
+		"info" : {
+			
 		}},
 		{"name" : "Palazzina Dansi",
 		"coords" : {
 			"latitude" : "45.79926",
 			"longitude" : "8.84855"
+		},
+		"image" : "",
+		"info" : {
+			
 		}},
 		{"name" : "Padiglione C.R.T.",
 		"coords" : {
 			"latitude" : "45.79888",
 			"longitude" : "8.84818"
+		},
+		"image" : "",
+		"info" : {
+			
 		}},
 		{"name" : "Padiglione E. Tanzi",
 		"coords" : {
 			"latitude" : "45.79766",
 			"longitude" : "8.84809"
+		},
+		"image" : "",
+		"info" : {
+			
 		}},
 		{"name" : "Padiglione E. Morselli",
 		"coords" : {
 			"latitude" : "45.79884",
 			"longitude" : "8.84913"
+		},
+		"image" : "",
+		"info" : {
+			
 		}},
 		{"name" : "Padiglione S.Biffi",
 		"coords" : {
 			"latitude" : "45.79767",
 			"longitude" : "8.84908"
+		},
+		"image" : "",
+		"info" : {
+			
 		}},
 		{"name" : "Cappella della Beata Vergine Addolorata",
 		"coords" : {
 			"latitude" : "45.79824",
 			"longitude" : "8.84928"
+		},
+		"image" : "",
+		"info" : {
+			
 		}},
 		{"name" : "Padiglione G. Antonini",
 		"coords" : {
 			"latitude" : "45.79887",
 			"longitude" : "8.85009"
+		},
+		"image" : "",
+		"info" : {
+			
 		}},
 		{"name" : "Padiglione C. Golgi",
 		"coords" : {
 			"latitude" : "45.79761",
 			"longitude" : "8.85001"
+		},
+		"image" : "",
+		"info" : {
+			
 		}},
 		{"name" : "Dipartimento delle Dipendenze",
 		"coords" : {
 			"latitude" : "45.79825",
 			"longitude" : "8.84984"
+		},
+		"image" : "",
+		"info" : {
+			
 		}},
 		{"name" : "Padiglione 12 (???)",
 		"coords" : {
 			"latitude" : "45.79762",
 			"longitude" : "8.85098"
+		},
+		"image" : "",
+		"info" : {
+			
 		}},
 		{"name" : "Padiglione G. B. Monteggia",
 		"coords" : {
 			"latitude" : "45.79822",
 			"longitude" : "8.85178"
+		},
+		"image" : "",
+		"info" : {
+			
 		}},
 		{"name" : "Dipartimento di Economia",
 		"coords" : {
 			"latitude" : "45.79817",
 			"longitude" : "8.85273"
+		},
+		"image" : "",
+		"info" : {
+			
 		}},
 		{"name" : "Rojac Cafè",
 		"coords" : {
 			"latitude" : "45.79855",
 			"longitude" : "8.85355"
+		},
+		"image" : "",
+		"info" : {
+			
 		}},
 		{"name" : "Laboratori (???)",
 		"coords" : {
 			"latitude" : "45.7986",
 			"longitude" : "8.85427"
+		},
+		"image" : "",
+		"info" : {
+			
 		}},
 		{"name" : "Padiglione Spallanzani",
 		"coords" : {
 			"latitude" : "45.7982",
 			"longitude" : "8.85485"
+		},
+		"image" : "",
+		"info" : {
+			
 		}},
 		{"name" : "PalaCUS Insubria",
 		"coords" : {
 			"latitude" : "45.79642",
 			"longitude" : "8.85439"
+		},
+		"image" : "",
+		"info" : {
+			
 		}},
 		{"name" : "Collegio Carlo Cattaneo",
 		"coords" : {
 			"latitude" : "45.79637",
 			"longitude" : "8.85072"
+		},
+		"image" : "",
+		"info" : {
+			
 		}},
 		{"name" : "Padiglione Bassani",
 		"coords" : {
 			"latitude" : "45.79695",
 			"longitude" : "8.84998"
+		},
+		"image" : "",
+		"info" : {
+			
 		}},
 		{"name" : "Facoltà di Biologia",
 		"coords" : {
 			"latitude" : "45.79676",
 			"longitude" : "8.84838"
+		},
+		"image" : "",
+		"info" : {
+			
 		}},
 		{"name" : "Padiglione L. Bianchi",
 		"coords" : {
 			"latitude" : "45.79823",
 			"longitude" : "8.85075"
+		},
+		"image" : "",
+		"info" : {
+			
 		}},
 		{"name" : "CasaAndrea",
 		"coords" : {
 			"latitude" : "45.5743165",
 			"longitude" : "8.9736728"
+		},
+		"image" : "",
+		"info" : {
+			
 		}},
 		{"name" : "Incrocio",
 		"coords" : {
 			"latitude" : "45.574740",
 			"longitude" : "8.973810"
+		},
+		"image" : "",
+		"info" : {
+			
 		}},
 		{"name" : "Parcheggio",
 		"coords" : {
 			"latitude" : "45.574066",
 			"longitude" : "8.974843"
+		},
+		"image" : "",
+		"info" : {
+			
 		}},
 		{"name" : "CasaUno",
 		"coords" : {
 			"latitude" : "45.80835",
 			"longitude" : "8.85046"
+		},
+		"image" : "",
+		"info" : {
+			
 		}},
 		{"name" : "CasaDue",
 		"coords" : {
 			"latitude" : "45.80768",
 			"longitude" : "8.85006"
+		},
+		"image" : "",
+		"info" : {
+			
 		}},
 		{"name" : "CasaTre",
 		"coords" : {
 			"latitude" : "45.80754",
 			"longitude" : "8.85095"
+		},
+		"image" : "",
+		"info" : {
+			
 		}}
 	]
 }
