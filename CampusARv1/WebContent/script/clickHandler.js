@@ -20,6 +20,7 @@ AFRAME.registerComponent("clickhandler", {
 					panel.appendChild(title);
 					panel.appendChild(content);
 				}
+				panel.setAttribute("style", "display: block;");
 			});
 		}
 });

@@ -157,10 +157,10 @@ input::-webkit-search-cancel-button {
 	border: none;
 	bottom: 0px;
 	left: 0px;
-	z-index: 2;
+	z-index: 3;
 	width: 100vw;
 	height: 60vh;
-	visibility: hidden;
+	display: none;
 }
 .button{
     position: absolute;
