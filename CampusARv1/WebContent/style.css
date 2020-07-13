@@ -22,7 +22,7 @@ body {
 	font-family:Garamond,Baskerville,"Baskerville Old Face","Hoefler Text","Times New Roman",serif;
 	font-size: 2em;
 	background-color: white;
-	background-image: url("sf_testata.png");
+	background-image: url("resources/images/sf_testata.png");
 	background-repeat: no-repeat;
 	background-position-x: center;
 	border-top: 3px;
@@ -60,7 +60,7 @@ body {
 	font-family: inherit;
 	font-size: 100%;
 	
-	background: url("search.png") no-repeat 9px center;
+	background: url("resources/images/search.png") no-repeat 9px center;
 	background-color: #fff;
 	color: transparent;
 	
@@ -171,10 +171,10 @@ input::-webkit-search-cancel-button {
     bottom: 5px;
 }
 .credit{
-	background: url("credits_icon.png") no-repeat;
+	background: url("resources/images/credits_icon.png") no-repeat;
 	left: 10px;
 }
 .info{
-	background: url("help_icon.png") no-repeat;
+	background: url("resources/images/help_icon.png") no-repeat;
 	right: 5px;
 }

@@ -23,7 +23,7 @@ function renderPlaces(places) {
         icon.setAttribute("width", "2");
         icon.setAttribute("height", "3");
         icon.setAttribute("name", places[i].name);
-        icon.setAttribute("src", "map-marker.png");
+        icon.setAttribute("src", "resources/images/map-marker.png");
         icon.setAttribute("look-at", "[gps-camera]");
         icon.setAttribute("clickhandler", "");
         icon.setAttribute("id", i);
@@ -57,16 +57,16 @@ function highlight(index) {
 	for(var i = 0; i<markers.length; i++){
 		let element = arview.contentDocument.getElementById(i.toString());
 		if(i == index){
-			element.setAttribute("src","map-marker-highlight.png");
+			element.setAttribute("src","resources/images/map-marker-highlight.png");
 		} else {
-			element.setAttribute("src","map-marker.png");
+			element.setAttribute("src","resources/images/map-marker.png");
 		}
 	}
 }
 
 arview.contentWindow.onload = () => {
 	let httpReq = new XMLHttpRequest();
-	httpReq.open("GET", "places.json");
+	httpReq.open("GET", "resources/places.json");
 	httpReq.send(null);
 	httpReq.onreadystatechange = function() {
 		if (this.readyState == 4 && this.status == 200) {
