@@ -9,7 +9,7 @@
 		"info" : [{
 			"title" : "",
 			"content" : ""
-		}]},
+}]},
 		{"name" : "Padiglione Ottorino Rossi",
 		"coords" : {
 			"latitude" : "45.79829",
@@ -237,8 +237,8 @@
 		},
 		"image" : "",
 		"info" : [{
-			"title" : "",
-			"content" : ""
+			"title" : "Abitazione",
+			"content" : "situata in provincia di Milano"
 		}]},
 		{"name" : "Incrocio",
 		"coords" : {
@@ -247,8 +247,8 @@
 		},
 		"image" : "",
 		"info" : [{
-			"title" : "",
-			"content" : ""
+			"title" : "Stop",
+			"content" : "Incrocio regolato con stop"
 		}]},
 		{"name" : "Parcheggio",
 		"coords" : {
@@ -257,8 +257,8 @@
 		},
 		"image" : "",
 		"info" : [{
-			"title" : "",
-			"content" : ""
+			"title" : "Parcheggio auto",
+			"content" : "riservato ai residenti"
 		}]},
 		{"name" : "CasaUno",
 		"coords" : {
@@ -267,8 +267,8 @@
 		},
 		"image" : "",
 		"info" : [{
-			"title" : "",
-			"content" : ""
+			"title" : "Abitazione 1",
+			"content" : "situata in provincia di Varese"
 		}]},
 		{"name" : "CasaDue",
 		"coords" : {
@@ -277,8 +277,8 @@
 		},
 		"image" : "",
 		"info" : [{
-			"title" : "",
-			"content" : ""
+			"title" : "Abitazione 2",
+			"content" : "sempre in provincia di Varese"
 		}]},
 		{"name" : "CasaTre",
 		"coords" : {
@@ -287,8 +287,8 @@
 		},
 		"image" : "",
 		"info" : [{
-			"title" : "",
-			"content" : ""
+			"title" : "Abitazione 3",
+			"content" : "anche questa in provincia di Varese"
 		}]}
 	]
 }
