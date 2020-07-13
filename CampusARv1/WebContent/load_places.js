@@ -64,18 +64,6 @@ function highlight(index) {
 	}
 }
 
-//AFRAME.registerComponent("clickhandler", {
-//		init: function() {	
-//			this.el.addEventListener("click", function(evt) {
-//				let icon = evt.target || evt.srcElement;
-//				alert("Clicked!");
-////				//handler setup
-////				let url = "InfoPadiglione.html?";
-////				//append params
-//			});
-//		}
-//});
-
 arview.contentWindow.onload = () => {
 	let httpReq = new XMLHttpRequest();
 	httpReq.open("GET", "places.json");
