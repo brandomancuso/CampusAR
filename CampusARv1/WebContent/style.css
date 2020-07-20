@@ -155,12 +155,34 @@ input::-webkit-search-cancel-button {
 #info-panel {
 	position: absolute;
 	border: none;
+/* 	border-top: 3px solid #006254; */
 	bottom: 0px;
-	left: 0px;
 	z-index: 3;
+	width: 0vw;
+	height: 0vh;
+	display: block;
+	background-color: white;
+/* 	padding-top: 3vh; */
+/* 	padding-left: 3vw; */
+/* 	padding-right: 3vw; */
+	text-align: center;
+	overflow: hidden;
+}
+
+#info-panel h2,p {
+	text-align: left;
+}
+#info-panel h2 {
+	padding-left: 4vw;
+}
+#info-panel:focus {
+	border-top: 3px solid #006254;
 	width: 100vw;
 	height: 60vh;
-	display: none;
+	background-color: white;
+	padding-top: 3vh;
+	padding-left: 3vw;
+	padding-right: 3vw;
 }
 .button{
     position: absolute;

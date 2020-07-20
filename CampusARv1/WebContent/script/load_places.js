@@ -10,7 +10,6 @@ class Marker {
 }
 
 let arview = document.getElementById("ar-camera");
-let db;
 let markers = [];
 
 function renderPlaces(places) {
@@ -79,7 +78,7 @@ arview.contentWindow.onload = () => {
 			}
 			renderPlaces(markers);
 			loadSearchbarItems(markers);
-			db = obj;
+			window.db = obj;
 		}
 	};
 }

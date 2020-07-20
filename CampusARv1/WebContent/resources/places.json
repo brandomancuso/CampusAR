@@ -9,7 +9,7 @@
 		"info" : [{
 			"title" : "",
 			"content" : ""
-}]},
+		}]},
 		{"name" : "Padiglione Ottorino Rossi",
 		"coords" : {
 			"latitude" : "45.79829",
@@ -289,6 +289,20 @@
 		"info" : [{
 			"title" : "Abitazione 3",
 			"content" : "anche questa in provincia di Varese"
-		}]}
+		}]},
+		{"name" : "Liceo Manfredini",
+		"coords" : {
+			"latitude" : "45.82458",
+			"longitude" : "8.84459"
+		},
+		"image" : "",
+		"info" : [{
+			"title" : "Professori",
+			"content" : "Giovanni, Marco, Luca"
+			},
+			{"title" : "Aulee",
+			"content" : "Aula1, Aula2, Aula3"
+			}
+		]}
 	]
 }
