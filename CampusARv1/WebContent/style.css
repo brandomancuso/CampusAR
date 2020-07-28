@@ -1,6 +1,6 @@
 @charset "ISO-8859-1";
 * {
-	outline: none !important; /**/
+	outline: none !important; /*Override google chrome outline*/
 }
 html, body {
 	margin: 0px;
@@ -14,7 +14,7 @@ body {
 #header {
 	display: table-cell;
 	width: 100vw;
-	height: 17vh;
+	height: 150px;
 	text-align: center;
 	text-transform: uppercase;
 	text-shadow: 0px 1px 1px #ddd;
@@ -25,6 +25,7 @@ body {
 	background-image: url("resources/images/sf_testata.png");
 	background-repeat: no-repeat;
 	background-position-x: center;
+	background-position-y: bottom;
 	border-top: 3px;
 	border-bottom: 3px;
 	border-left: 0px;
@@ -46,7 +47,7 @@ body {
 	position: relative;
 	top: 0px;
 	left: 0px;
-	padding: 5px;
+	padding: 15px;
 	z-index: 1;
 }
 .searchbar{
@@ -54,18 +55,21 @@ body {
 	display: inline-block;
 	left: 0px;
 	
+	box-sizing: content-box;
 	-webkit-appearance: textfield;
 	-webkit-box-sizing: content-box;
 	
 	font-family: inherit;
-	font-size: 100%;
+	font-size: 140%;
+	text-indent: 15px;
 	
-	background: url("resources/images/search.png") no-repeat 9px center;
+	background: url("resources/images/search.png") no-repeat 18px center;
 	background-color: #fff;
+	background-size: 23px;
 	color: transparent;
 	
 	border: solid 1px #006254;
-	padding: 9px 10px 9px 10px;
+	padding: 20px 22px 20px 22px;
 	width: 15px;
 	
 	-webkit-border-radius: 10em;
@@ -74,7 +78,7 @@ body {
 	
 	-webkit-transition: all .5s;
 	-moz-transition: all .5s;
-	trasition: all .5s;
+	transition: all .5s;
 
 	cursor: pointer;
 }
@@ -125,17 +129,17 @@ input::-webkit-search-cancel-button {
 .listElement {
   border: none;
   margin: 0px;
-  background-color: #fff; /* White background color */
-  padding: 12px; /* Add some padding */
-  font-size: 120%; /* Increase the font-size */
-  color: black; /* Add a black text color */
-  display: block; /* Make it into a block element to fill the whole list */
+  background-color: #fff; 
+  padding: 12px; 
+  font-size: 120%; 
+  color: black; 
+  display: block; 
   width: 100%;
   text-align: left;
 }
 
 .listElement:hover {
-  background-color: #eee; /* Add a hover effect to all links, except for headers */
+  background-color: #eee; 
 }
 
 .dropdown:focus-within .dropdown-content {
@@ -150,21 +154,17 @@ input::-webkit-search-cancel-button {
 	left: 0px;
 	z-index: 0;
 	width: 100vw;
-	height: 83vh;
+	height: 100vh;
 }
 #info-panel {
 	position: absolute;
 	border: none;
-/* 	border-top: 3px solid #006254; */
 	bottom: 0px;
 	z-index: 3;
 	width: 0vw;
 	height: 0vh;
 	display: block;
 	background-color: white;
-/* 	padding-top: 3vh; */
-/* 	padding-left: 3vw; */
-/* 	padding-right: 3vw; */
 	text-align: center;
 	overflow: hidden;
 }
@@ -173,7 +173,7 @@ input::-webkit-search-cancel-button {
 	text-align: left;
 }
 #info-panel h2 {
-	padding-left: 4vw;
+	padding-left: 1vw;
 }
 #info-panel:focus {
 	border-top: 3px solid #006254;
@@ -183,6 +183,7 @@ input::-webkit-search-cancel-button {
 	padding-top: 3vh;
 	padding-left: 3vw;
 	padding-right: 3vw;
+	overflow: auto;
 }
 .button{
     position: absolute;
@@ -194,9 +195,15 @@ input::-webkit-search-cancel-button {
 }
 .credit{
 	background: url("resources/images/credits_icon.png") no-repeat;
+	background-position: center;
+	width: 30px;
+	height: 30px;
 	left: 10px;
 }
 .info{
 	background: url("resources/images/help_icon.png") no-repeat;
+	background-position: center;
+	width: 30px;
+	height: 30px;
 	right: 5px;
 }
