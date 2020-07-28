@@ -189,21 +189,20 @@ input::-webkit-search-cancel-button {
     position: absolute;
     border: none;
     z-index: 1;
-    width: 30px;
-	height: 30px;
-    bottom: 5px;
+    width: 40px;
+	height: 40px;
 }
 .credit{
 	background: url("resources/images/credits_icon.png") no-repeat;
 	background-position: center;
-	width: 30px;
-	height: 30px;
-	left: 10px;
+	background-size: 40px;
+	left: 20px;
+	bottom: 15px;
 }
 .info{
 	background: url("resources/images/help_icon.png") no-repeat;
 	background-position: center;
-	width: 30px;
-	height: 30px;
-	right: 5px;
+	background-size: 40px;
+	right: 15px;
+	bottom: 10px;
 }
