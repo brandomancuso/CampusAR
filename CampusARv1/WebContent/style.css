@@ -168,7 +168,7 @@ input::-webkit-search-cancel-button {
 	overflow: hidden;
 }
 
-#info-panel h2,p {
+#info-panel h2,div {
 	text-align: left;
 }
 #info-panel h2 {

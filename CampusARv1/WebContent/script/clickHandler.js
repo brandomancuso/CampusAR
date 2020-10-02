@@ -19,7 +19,7 @@ AFRAME.registerComponent("clickhandler", {
 				for(let i = 0; i < el.info.length; i++){
 					let title = parent.document.createElement("h2");
 					title.innerHTML = el.info[i].title;
-					let content = parent.document.createElement("p");
+					let content = parent.document.createElement("div");
 					content.innerHTML = el.info[i].content;
 					panel.appendChild(title);
 					panel.appendChild(content);

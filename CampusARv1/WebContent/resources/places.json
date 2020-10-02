@@ -18,7 +18,7 @@
 		"image" : "",
 		"info" : [{
 			"title" : "Sede degli uffici dei professori del corso di laurea in Informatica",
-			"content" : "Ufficio del professor Davide Tosi, Ufficio del professor Paolo Massazza, Ufficio della professoressa Sabrina Sophy Sicari, Ufficio della professoressa Barbara Carminati"
+			"content" : "<!DOCTYPE html> <html> <body> <ul> <li> Ufficio del professor Davide Tosi </li> <li> Ufficio del professor Paolo Massazza </li> <li> Ufficio della professoressa Sabrina Sophy Sicari </li> <li> Ufficio della professoressa Barbara Carminati </li> </ul> </body> </html> "
 		}]},
 		{"name" : "Padiglione Seppilli",
 		"coords" : {
