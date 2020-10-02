@@ -1,5 +1,4 @@
 function btnCredits() {
-	displayInfoPanel();
 	alert("Credits");
 }
 
@@ -8,6 +7,5 @@ function btnInfo() {
 }
 
 function btnClose() {
-	alert("close");
-	window.focus();
+	hideInfoPanel();
 }
