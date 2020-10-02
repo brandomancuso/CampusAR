@@ -5,11 +5,11 @@ AFRAME.registerComponent("clickhandler", {
 				let index = parseInt(icon.getAttribute("id"));
 				let panel = parent.document.getElementById("info-panel");
 				let el = parent.db.Campus[index];
-//				panel.innerHTML = "";
-//				let backBtn = parent.document.createElement("button");
-//				backBtn.setAttribute("class", "button close");
-//				backBtn.setAttribute("onClick", "btnClose()");
-//				panel.appendChild(backBtn);
+				panel.innerHTML = "";
+				let backBtn = parent.document.createElement("button");
+				backBtn.setAttribute("class", "button close");
+				backBtn.setAttribute("onClick", "btnClose()");
+				panel.appendChild(backBtn);
 				let image = parent.document.createElement("img");
 				image.setAttribute("src", "resources/images/" + el.image);
 				panel.appendChild(image);
