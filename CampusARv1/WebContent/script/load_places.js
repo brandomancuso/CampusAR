@@ -28,6 +28,11 @@ function renderPlaces(places) {
         icon.setAttribute("clickhandler", "");
         icon.setAttribute("id", i);
         a_scene.appendChild(icon);
+        const text = ar_doc.createElement("a-entity");
+        text.setAttribute("text","value: " + places[i].name + "; font: https://cdn.aframe.io/fonts/Monoid.fnt; align: center; width: 15; color: #086e25");
+        text.setAttribute("position"," 0 3 0");
+        text.setAttribute("gps-entity-place", "latitude: " + places[i].coords[0] + "; longitude: " + places[i].coords[1] + ";");
+        a_scene.appendChild(text);
     }
 }
 
