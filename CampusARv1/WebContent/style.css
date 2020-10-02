@@ -194,6 +194,20 @@ input::-webkit-search-cancel-button {
 	-moz-border-radius: 10em;
 	border-radius: 10em;
 }
+.close{
+	display: block;
+	top: 10px;
+	right: 30px;
+	width: 16px;
+	height: 16px;
+	z-index: 4;
+	background-position: center;
+	background: url("resources/images/cancel.png") no-repeat;
+	background-size: 16px;
+	border: none;
+	border-radius: 0em;
+	
+}
 .credit{
 	background: url("resources/images/credits_icon.png") no-repeat;
 	background-position: center;

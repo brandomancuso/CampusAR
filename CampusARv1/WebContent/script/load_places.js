@@ -20,8 +20,8 @@ function renderPlaces(places) {
         // add place icon
         const icon = ar_doc.createElement("a-image");
         icon.setAttribute("gps-entity-place", "latitude: " + places[i].coords[0] + "; longitude: " + places[i].coords[1] + ";");
-        icon.setAttribute("width", "2");
-        icon.setAttribute("height", "3");
+        icon.setAttribute("width", "2.4");
+        icon.setAttribute("height", "4");
         icon.setAttribute("name", places[i].name);
         icon.setAttribute("src", "resources/images/map-marker.png");
         icon.setAttribute("look-at", "[gps-camera]");

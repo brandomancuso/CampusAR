@@ -1,7 +1,13 @@
 function btnCredits() {
-  alert("Credits");
+	displayInfoPanel();
+	alert("Credits");
 }
 
 function btnInfo() {
-	  alert("Info");
+	alert("Info");
+}
+
+function btnClose() {
+	alert("close");
+	window.focus();
 }
