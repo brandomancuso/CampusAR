@@ -18,7 +18,7 @@
 		"image" : "",
 		"info" : [{
 			"title" : "Sede degli uffici dei professori del corso di laurea in Informatica",
-			"content" : "<!DOCTYPE html> <html> <body> <ul> <li> Ufficio del professor Davide Tosi </li> <li> Ufficio del professor Paolo Massazza </li> <li> Ufficio della professoressa Sabrina Sophy Sicari </li> <li> Ufficio della professoressa Barbara Carminati </li> </ul> </body> </html> "
+			"content" : "<!DOCTYPE html> <html> <body> <ul> <li> Ufficio del professor Davide Tosi </li> <li> Ufficio del professor Paolo Massazza </li> <li> Ufficio della professoressa Sabrina Sophy Sicari </li> <li> Ufficio della professoressa Barbara Carminati </li> <li> Ufficio del professor Pietro Colombo </li> <li> Ufficio del professor Luigi Antonio Lavazza </li> </ul> </body> </html> "
 		}]},
 		{"name" : "Padiglione Seppilli",
 		"coords" : {
@@ -27,8 +27,8 @@
 		},
 		"image" : "",
 		"info" : [{
-			"title" : "",
-			"content" : ""
+			"title" : "Aule presenti",
+			"content" :"<!DOCTYPE html> <html> <body> <ul> <li> Aula 1S </li> <li> Aula 2S </li> <li> Aula 3S </li> <li> Aula 4S </li> <li> Aula 5S </li> <li> Sala ristoro/macchinette </li> <li> Aula studio </li> <li> Aula computer </li> </ul> </body> </html> "
 		}]},
 		{"name" : "Palazzina Dansi",
 		"coords" : {
@@ -67,8 +67,11 @@
 		},
 		"image" : "",
 		"info" : [{
-			"title" : "",
-			"content" : ""
+			"title" : "Aule al piano terra",
+			"content" :"<!DOCTYPE html> <html> <body> <ul> <li> Aula 1TM </li> <li> Aula 2TM </li> <li> Aula 3TM </li> <li> Aula 4TM </li> <li> Aula 5TM </li> <li> Aula 6TM </li> <li> Aula 7TM </li> <li> Aula 8TM </li> <li> Aula 9TM </li> <li> Aula 10TM </li> <li> Sala ristoro/macchinette </li> <li> Aula studio </li></ul> </body> </html> "},
+			{
+			"title" : "Aule al primo piano",
+			"content" :"<!DOCTYPE html> <html> <body> <ul> <li> Aula 1PM </li> <li> Aula 2PM </li> <li> Aula 3PM </li> <li> Aula 4PM </li> <li> Aula 5PM </li> <li> Aula 6PM </li> <li> Aula 7PM </li> <li> Aula 8PM </li> <li> Aula 9PM </li> <li> Aula 10PM </li> <li> Laboratorio informatico 1 </li> <li> Laboratorio informatico 2 </li> </ul> </body> </html> "		
 		}]},
 		{"name" : "Padiglione S.Biffi",
 		"coords" : {
@@ -147,8 +150,11 @@
 		},
 		"image" : "",
 		"info" : [{
-			"title" : "",
-			"content" : ""
+			"title" : "Aule al piano terra",
+			"content" :"<!DOCTYPE html> <html> <body> <ul> <li> Aula 1 mtg </li> <li> Aula 2 mtg </li> <li> Aula 4 mtg </li> <li> Aula 5 mtg </li> <li> Aula 6 mtg </li> <li> Aula 7 mtg </li> <li> Aula 8 mtg </li> <li> Aula 9 mtg </li> <li> Aula 10 mtg </li> <li> Aula 11 mtg </li> <li> Aula 12 mtg </li> <li> Aula 13 mtg </li> <li> Biblioteca di economia </li> <li> Sala ristoro/macchinette </li> <li> Laboratorio info 1 </li></ul> </body> </html> "},
+			{
+			"title" : "Aule al primo piano",
+			"content" :"<!DOCTYPE html> <html> <body> <ul> <li> Laboratorio info 2 </li> <li> Laboratorio info 3 </li> <li> Laboratorio info 4 </li> <li> Aula studio </li> <li> Uffici dei professori di economia </li> </ul> </body> </html> "	
 		}]},
 		{"name" : "Rojac Caf√®",
 		"coords" : {
@@ -157,8 +163,8 @@
 		},
 		"image" : "",
 		"info" : [{
-			"title" : "",
-			"content" : ""
+			"title" : "Mensa",
+			"content" : "Struttura che offre servizio di ristorazione e bar per gli studenti e i professori, Ë possibile studiare anche all'interno"
 		}]},
 		{"name" : "Laboratori (???)",
 		"coords" : {
@@ -217,8 +223,8 @@
 		},
 		"image" : "",
 		"info" : [{
-			"title" : "",
-			"content" : ""
+			"title" : "Aule presenti",
+			"content" :"<!DOCTYPE html> <html> <body> <ul> <li> Aula Magna Granero Porati </li> <li> Biblioteca di medicina </li> <li> Segreteria didattica DISTA </li> <li> Segreteria Stage </li> <li> Laboratori di chimica </li> <li> Uffici dei professori di chimica </li> Uffici dei professori di biologia </ul> </body> </html> "
 		}]},
 		{"name" : "Padiglione L. Bianchi",
 		"coords" : {
