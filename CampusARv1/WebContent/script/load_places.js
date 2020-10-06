@@ -20,8 +20,8 @@ function renderPlaces(places) {
         // add place icon
         const icon = ar_doc.createElement("a-image");
         icon.setAttribute("gps-entity-place", "latitude: " + places[i].coords[0] + "; longitude: " + places[i].coords[1] + ";");
-        icon.setAttribute("width", "2.8");
-        icon.setAttribute("height", "4");
+        icon.setAttribute("width", "5.5");
+        icon.setAttribute("height", "8");
         icon.setAttribute("name", places[i].name);
         icon.setAttribute("src", "resources/images/map-marker.png");
         icon.setAttribute("look-at", "[gps-camera]");
@@ -30,7 +30,7 @@ function renderPlaces(places) {
         a_scene.appendChild(icon);
         const text = ar_doc.createElement("a-entity");
         text.setAttribute("text","value: " + places[i].name + "; font: https://cdn.aframe.io/fonts/Monoid.fnt; width: 30; align: center; color: #086e25");
-        text.setAttribute("position"," 0 2.8 0");
+        text.setAttribute("position"," 0 6 0");
         text.setAttribute("gps-entity-place", "latitude: " + places[i].coords[0] + "; longitude: " + places[i].coords[1] + ";");
         text.setAttribute("look-at", "[gps-camera]");
         text.setAttribute("clickhandler", "");
