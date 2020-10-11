@@ -26,7 +26,7 @@ function renderPlaces(places) {
         icon.setAttribute("src", "resources/images/map-marker.png");
         icon.setAttribute("look-at", "[gps-camera]");
         icon.setAttribute("clickhandler", "");
-        icon.setAttribute("id", i);
+        icon.setAttribute("id", i + "_icon");
         a_scene.appendChild(icon);
         const text = ar_doc.createElement("a-entity");
         text.setAttribute("text","value: " + places[i].name + "; font: https://cdn.aframe.io/fonts/Monoid.fnt; width: 30; align: center; color: #086e25");
@@ -34,7 +34,7 @@ function renderPlaces(places) {
         text.setAttribute("gps-entity-place", "latitude: " + places[i].coords[0] + "; longitude: " + places[i].coords[1] + ";");
         text.setAttribute("look-at", "[gps-camera]");
         text.setAttribute("clickhandler", "");
-        text.setAttribute("id", i);
+        text.setAttribute("id", i + "_name");
         a_scene.appendChild(text);
     }
 }
@@ -63,11 +63,14 @@ function searchbarClickHandler() {
 
 function highlight(index) {
 	for(var i = 0; i<markers.length; i++){
-		let element = arview.contentDocument.getElementById(i.toString());
+		let element_icon = arview.contentDocument.getElementById(i.toString() + "_icon");
+		let element_name = arview.contentDocument.getElementById(i.toString() + "_name");
 		if(i == index){
-			element.setAttribute("src","resources/images/map-marker-highlight.png");
+			element_icon.setAttribute("src","resources/images/map-marker-highlight.png");
+			element_name.setAttribute("text","value: " + markers[i].name + "; font: https://cdn.aframe.io/fonts/Monoid.fnt; width: 30; align: center; color: #ff000a");
 		} else {
-			element.setAttribute("src","resources/images/map-marker.png");
+			element_icon.setAttribute("src","resources/images/map-marker.png");
+			element_name.setAttribute("text","value: " + markers[i].name + "; font: https://cdn.aframe.io/fonts/Monoid.fnt; width: 30; align: center; color: #086e25");
 		}
 	}
 }
