@@ -9,3 +9,11 @@ function btnInfo() {
 function btnClose() {
 	hideInfoPanel();
 }
+
+function btnMap() {
+	window.location.href = './map.html';
+}
+
+function btnAr() {
+	window.location.href = './index.html';
+}
