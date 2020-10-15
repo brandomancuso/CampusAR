@@ -225,7 +225,7 @@ input::-webkit-search-cancel-button {
 	background-color: rgba(255, 255, 255, 0.4);
 	grid-column: 1;
 	grid-row: 1;
-	left: 0px;
+	justify-self: left;
 }
 .info{
 	background: url("resources/images/help_icon.png") no-repeat;
@@ -234,8 +234,7 @@ input::-webkit-search-cancel-button {
 	background-color: rgba(255, 255, 255, 0.4);
 	grid-column: 3;
 	grid-row: 1;
-	right: 0px;
-	position: absolute;
+	justify-self: right;
 }
 .map {
 	background: url("resources/images/map-2d.png") no-repeat;
@@ -244,7 +243,7 @@ input::-webkit-search-cancel-button {
 	background-color: rgba(255, 255, 255, 0.4);
 	grid-column: 2;
 	grid-row: 1;
-	margin: auto;
+	justify-self: center;
 }
 
 .ar {
@@ -254,7 +253,7 @@ input::-webkit-search-cancel-button {
 	background-color: rgba(255, 255, 255, 0.4);
 	grid-column: 2;
 	grid-row: 1;
-	margin: auto;
+	justify-self: center;
 }
 
 #mapid { 
