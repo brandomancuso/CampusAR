@@ -192,6 +192,7 @@ input::-webkit-search-cancel-button {
 	width: 100%;
 	height: max-content;
 	grid-template-columns: auto auto auto;
+	grid-template-rows: auto;
 }
 .button{
     border: none;
@@ -222,8 +223,6 @@ input::-webkit-search-cancel-button {
 	background-position: center;
 	background-size: 30px;
 	background-color: rgba(255, 255, 255, 0.4);
-/* 	left: 20px; */
-/* 	bottom: 15px; */
 	grid-column: 1;
 	grid-row: 1;
 	left: 0px;
@@ -233,8 +232,6 @@ input::-webkit-search-cancel-button {
 	background-position: center;
 	background-size: 30px;
 	background-color: rgba(255, 255, 255, 0.4);
-/* 	right: 15px; */
-/* 	bottom: 10px; */
 	grid-column: 3;
 	grid-row: 1;
 	right: 0px;
@@ -245,20 +242,16 @@ input::-webkit-search-cancel-button {
 	background-position: center;
 	background-size: 30px;
 	background-color: rgba(255, 255, 255, 0.4);
-/* 	right: 15px; */
-/* 	bottom: 10px; */
 	grid-column: 2;
 	grid-row: 1;
 	margin: auto;
 }
 
 .ar {
-	background: url("resources/images/help_icon.png") no-repeat;
+	background: url("resources/images/ar.png") no-repeat;
 	background-position: center;
 	background-size: 30px;
 	background-color: rgba(255, 255, 255, 0.4);
-	right: 15px;
-	bottom: 10px;
 	grid-column: 2;
 	grid-row: 1;
 	margin: auto;
