@@ -224,3 +224,11 @@ input::-webkit-search-cancel-button {
 	right: 15px;
 	bottom: 10px;
 }
+
+#mapid { 
+	height: 100vh;
+	width: 100vw; 
+}
+
+
+
