@@ -160,7 +160,7 @@ input::-webkit-search-cancel-button {
 	border: none;
 	bottom: 0px;
 	z-index: 3;
-	width: webkit-fill-available;
+	width: 0vw;
 	height: 0vh;
 	display: block;
 	background-color: white;
@@ -182,6 +182,8 @@ input::-webkit-search-cancel-button {
 	padding-left: 3vw;
 	padding-right: 3vw;
 	overflow: auto;
+	width: -moz-available;
+	width: -webkit-fill-available;
 }
 
 #buttons {
