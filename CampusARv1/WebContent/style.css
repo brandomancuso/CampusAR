@@ -160,7 +160,7 @@ input::-webkit-search-cancel-button {
 	border: none;
 	bottom: 0px;
 	z-index: 3;
-	width: 0vw;
+	width: webkit-fill-available;
 	height: 0vh;
 	display: block;
 	background-color: white;
@@ -176,7 +176,6 @@ input::-webkit-search-cancel-button {
 }
 #info-panel:focus {
 	border-top: 3px solid #006254;
-	width: 100vw;
 	height: 60vh;
 	background-color: white;
 	padding-top: 3vh;
