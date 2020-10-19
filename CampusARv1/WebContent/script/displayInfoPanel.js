@@ -3,5 +3,6 @@ function displayInfoPanel(){
 }
 
 function hideInfoPanel(){
+	document.getElementById("info-panel").blur();
 	window.focus();
 }
